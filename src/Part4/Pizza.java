@@ -1,11 +1,8 @@
 package Part4;
 
-public class Pizza {
+public class Pizza implements Comparable<Pizza>   {
     private int price;
     private String name;
-    public Pizza() {
-
-    }
 
     public Pizza(String name, int price) {
         this.name = name;
@@ -31,5 +28,9 @@ public class Pizza {
     public String getPizzaInfo() {
         return "Pizza Name: " + name + ", Pizza price: " + price;
     }
-}
 
+    public int compareTo(Pizza otherPizza) {
+        return Integer.compare(this.price, otherPizza.price);
+    }
+
+}

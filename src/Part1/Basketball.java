@@ -33,7 +33,7 @@ class BasketballDemo {
         Basketball ball1 = new Basketball();
 
 
-        // ball.dribble(); // The result will be error
+        // ball1.dribble(); // The result will be error
 
         System.out.println("Brand: " + ball1.brand);
         System.out.println("Size: " + ball1.size);
@@ -42,7 +42,7 @@ class BasketballDemo {
         System.out.println("Price: $" + ball1.price);
 
 
-        // System.out.println("Color: " + ball.color); //The result will be error
+        // System.out.println("Color: " + ball1.color); //The result will be error
 
 
         ball1.setColor("Black");
